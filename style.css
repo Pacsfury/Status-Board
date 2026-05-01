@@ -149,9 +149,9 @@ h1 {
 
 .grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 25px;
-    padding: 40px;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 20px;
+    padding: 20px;
     max-width: 1000px;
     margin: 0 auto;
 }
@@ -160,15 +160,18 @@ h1 {
     background: white;
     border: 2px solid #ebf4ff;
     border-radius: 12px;
-    padding: 30px;
+    padding: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 10px;
+    transition: all 0.3s ease;
     cursor: pointer;
-    transition: 0.3s;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
 }
 
 .card:hover {
     border-color: #4a90e2;
     transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(72, 72, 201, 0.15);
 }
