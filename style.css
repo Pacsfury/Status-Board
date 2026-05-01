@@ -1,0 +1,174 @@
+html {
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: #f0f2f5;
+    margin: 0;
+    transition: background 0.3s;
+}
+
+h1 {
+    font-family: 'Comfortaa', sans-serif;
+    text-align: center;
+    font-weight: 300;
+    color: #2c3e50;
+    margin-top: 50px;
+}
+
+/* --- BOTONS 3D (L'ESTIL DEL TEU TEXT PROCESSOR) --- */
+.toolbar button, .toolbar-menu button {
+    height: 30px;
+    width: auto;
+    min-width: 60px;
+    padding: 0 15px;
+    color: #FFFFFF;
+    background-color: #a4c8ff; /* Blau */
+    border: 1px solid #4a90e2; 
+    border-radius: 6px;
+    transition: all 0.6s;
+    box-shadow: 6px 6px 5px rgb(161, 196, 255);
+    cursor: pointer;
+    outline: none;
+    margin: 5px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+}
+
+.toolbar button:hover, .toolbar-menu button:hover {
+    background-color: #3f99ed;
+    border-color: #1a73e8;
+    transform: translateY(-2px);
+    box-shadow: 6px 6px 5px #6eb4fa;
+}
+
+.toolbar button:active, .toolbar-menu button:active {
+    background-color: #1557b0;
+    border-color: #1a73e8;
+    transform: translateY(4px);
+    box-shadow: 2px 2px 2px #6eb4fa;
+    transition: all 0.2s;
+}
+
+/* --- INPUT EXPANDIBLE --- */
+#inp_name {
+    height: 26.5px;
+    width: 120px;
+    color: #003a8d;
+    background-color: #fbfffb;
+    border: 1px solid #a6ccfd;
+    border-radius: 6px;
+    transition: all 0.6s;
+    box-shadow: 6px 6px 5px rgb(243, 248, 255);
+    outline: none;
+    padding-left: 10px;
+}
+
+#inp_name:focus {
+    width: 250px;
+    background-color: #a7d1ff;
+    border: 1px solid #68a9ff;
+    box-shadow: 6px 6px 5px #e2f0f7;
+}
+
+/* --- PAPER DE L'EDITOR --- */
+.paper-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 40px;
+    min-height: 800px;
+    background-color: white;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    border-radius: 2px;
+}
+
+/* --- KANBAN GRID --- */
+.kanban-grid {
+    display: flex;
+    gap: 20px;
+}
+
+.column {
+    flex: 1;
+    border-radius: 8px;
+    padding: 15px;
+    min-height: 600px;
+    border: 1px solid rgba(0,0,0,0.05);
+}
+
+.column-title {
+    text-align: center;
+    font-family: 'Comfortaa', sans-serif;
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+/* Colors recuperats de les columnes */
+#todo { background-color: #fff5f5; border-top: 5px solid #ff8787; }
+#in-progress { background-color: #fff9db; border-top: 5px solid #ffd43b; }
+#done { background-color: #ebfbee; border-top: 5px solid #69db7c; }
+
+/* --- TASQUES --- */
+.task-card {
+    background: white;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 6px;
+    border: 1px solid #eee;
+    box-shadow: 3px 3px 0px rgba(0,0,0,0.02);
+    cursor: grab;
+    outline: none;
+}
+
+.task-card:focus {
+    border: 1px solid #4a90e2;
+}
+
+/* --- MENÚ GRID --- */
+.toolbar-menu {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.toolbar button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    vertical-align: middle;
+}
+
+.toolbar button img {
+    height: 18px;
+    width: auto;
+}
+
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 25px;
+    padding: 40px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.card {
+    background: white;
+    border: 2px solid #ebf4ff;
+    border-radius: 12px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.card:hover {
+    border-color: #4a90e2;
+    transform: translateY(-5px);
+}

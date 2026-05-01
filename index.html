@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Board Processor - Menu</title>
+
+    <link rel="icon" type="image/png" href="img/favicon.png">
+    <link rel="apple-touch-icon" href="img/favicon.png">
+
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- MENU SCREEN -->
+    <div id="menu-screen">
+        <h1>Board Processor</h1>
+        <div class="toolbar-menu">
+            <button id="btn_select_folder">Select Workspace Folder</button>
+            <button id="btn_new_board">New Board +</button>
+        </div>
+        <div class="grid" id="boards-list">
+            <!-- Boards will be injected here -->
+        </div>
+    </div>
+
+    <!-- EDITOR SCREEN -->
+    <div id="board-screen" style="display: none;">
+        <!-- <h1 id="editor-display-title"></h1> -->
+        
+        <div class="toolbar">
+            <button id="btn_menu_back"><img src="img/home.png" alt="Menu"></button>
+            <input type="text" id="inp_name" placeholder="Board name...">
+            <button id="btn_new_task">Add Task +</button>
+        </div>
+
+        <div class="paper-container">
+            <div class="kanban-grid">
+                <div class="column" id="todo">
+                    <h3 class="column-title">TO DO</h3>
+                    <div class="task-list"></div>
+                </div>
+                <div class="column" id="in-progress">
+                    <h3 class="column-title">IN PROGRESS</h3>
+                    <div class="task-list"></div>
+                </div>
+                <div class="column" id="done">
+                    <h3 class="column-title">DONE</h3>
+                    <div class="task-list"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
