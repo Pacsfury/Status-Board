@@ -18,7 +18,7 @@ h1 {
 
 /* --- BOTONS 3D (L'ESTIL DEL TEU TEXT PROCESSOR) --- */
 .toolbar button, .toolbar-menu button {
-    height: 30px;
+    height: 40px;
     width: auto;
     min-width: 60px;
     padding: 0 15px;
